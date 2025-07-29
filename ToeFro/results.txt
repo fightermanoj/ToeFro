@@ -1,0 +1,28 @@
+todays task
+1. get the extra ir soldered to glasses 
+2. sd card read and write bno055 
+3. sd vs udp data loss 
+4. enclosure to the toefro 
+5. manual for OMG glasses
+
+
+data from bno055
+1. (1) temperature of the board 
+2. (3) euler angles ( orientation.x , y , z)
+3. (3) angular velocity ( gyro.x , y , z)
+4. (3) linear acceleration ( acceleration.x , y , z) 
+5. (3) Mangnetometer ( magnetic.x , y , z )
+6. (3) raw accelerometer ( acceleration x , y , z)
+7. (3) gravity data ( gravity experienced by sensor fusion algo)
+8. (4) system calibration ( system , gyro , accel & gyro )
+9. (4) Quaternion ( x y z w ) 
+
+27 parmaters 
+
+imu_1 & udp_test_1 ( 9 packets data loss ) - UDP ( 9 / 410 * 100 ) 2% loss 
+
+imu_2 & udp_test_2 ( 2 packet data loss ) - USP ( 2 / 162 * 100 ) 1.2% loss 
+
+imu_4 & udp_test_3 ( 2 packet data loss ) - UDP ( 2/ 249 * 100 ) 0.8 % data loss 
+
+imu_13 & udp_test_4 ( 2 packet loss in sd card ) ( 1 / 154 ) 0.6 % data loss 
